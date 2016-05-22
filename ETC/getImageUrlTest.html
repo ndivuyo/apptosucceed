@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+			$.fn.getImageUrl = function(index) {
+				var element = this,
+					promise = $.ajax({
+					url:'ImageUrl.php',
+					type: 'POST',
+					data: {
+						ID : index
+					},
+					success: function(data) {
+						element.attr('src', data);
+						$("#test").text(data);
+					}
+				});
+			}
+		</script>
+	</head>
+<body>
+	<div id = "test"></div>
+	<img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" onload="$(this).getImageUrl('999')" alt="">
+</body>

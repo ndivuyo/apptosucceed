@@ -1,0 +1,175 @@
+<!-- Jewel Lee 2016, Mingjie Jin 2016 -->
+
+<head>
+	<title>Referrals | App To Succeed</title>
+
+	<!-- Set Header Page Title -->
+	<script type="text/javascript"> setHeaderPageTitle('Referrals'); </script>
+</head>
+
+<!-- Article content -->
+<div class="main-entry">
+    <p>Please help reach teen educators, organizations and parents by filling out the information below so we can inform them about Map the Money Maze.</p>
+    <p><span style="color:red">*Required</span></p>
+    
+    <form action="" method="post" id="referralForm">
+        <!-- ORG -->
+        <div class="form-group row">
+            <label for="input-org-name" class="col-sm-3 control-label">Organization name</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="input-org-name" name = "org">
+            </div>
+        </div>
+        <!-- ORG CONTACT -->
+        <div class="form-group row">
+            <label for="org-contact" class="col-sm-3 control-label">Organization contact</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="org-contact" name="org_contact" placeholder="Position/Role in Organization">
+            </div>
+        </div>
+        <!-- TITLE -->
+        <div class="form-group row">
+            <label for="title" class="col-sm-3 control-label"><span style="color:red">*</span>My Title</label>
+            <div class="col-sm-2">
+                 <select name="title" class = "form-control" id= "title">
+                    <option>Title</option>
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Ms.</option>
+                    <option>Miss</option>
+                    <option>Dr.</option>
+                </select>
+            </div>
+        </div>
+        <!-- FIRST NAME -->
+         <div class="form-group row">
+            <label for="input-first-name" class="col-sm-3 control-label"><span style="color:red">*</span>Contact's first name</label>
+            <div class="col-sm-5">
+                <input type="text" name="firstname" value="" class="form-control" id="input-first-name"/>
+            </div>
+        </div>
+        <!-- LAST NAME -->
+        <div class="form-group row">
+            <label for="input-last-name" class="col-sm-3 control-label"><span style="color:red">*</span>Contact's last name</label>
+            <div class="col-sm-5">
+                <input type="text" name="lastname" value="" class="form-control" id="input-last-name"/>
+            </div>
+        </div>
+        <!-- EMAIL -->
+        <div class="form-group row">
+            <label for="input-email" class="col-sm-3 control-label"><span style="color:red">*</span>Contact's email</label>
+            <div class="col-sm-5">
+                <input type="email" name="email" value="" class="form-control" id="input-email">
+            </div>
+        </div>
+        <!-- PHONE (MOBILE) -->
+        <div class="form-group row">
+            <label for="mobile-phone" class="col-sm-3 control-label">Contact's phone (mobile)</label>
+            <div class="col-sm-5">
+                <input type="text" name="phonemobile" value="" class="form-control" id="mobile-phone" pattern="\d{3}-?\d{3}-?\d{4}">
+            </div>
+        </div>
+        <!-- PHONE (HOME/WORK) -->
+        <div class="form-group row">
+            <label for="mobile-home" class="col-sm-3 control-label">Contact's phone (h/w)</label>
+            <div class="col-sm-5">
+                <input type="text" name="phonehome" value="" class="form-control" id="mobile-home" pattern="\d{3}-?\d{3}-?\d{4}">
+            </div>
+        </div>
+        <!-- ADDRESS -->
+        <div class="form-group row">
+            <label for="address" class="col-sm-3 control-label">Contact's address</label>
+            <div class="col-sm-5">
+                <input type="text" name="address" value="" class="form-control" id="address">
+            </div>
+        </div>
+        <!-- CITY -->
+        <div class="form-group row">
+            <label for="city-name" class="col-sm-3 control-label"><span style="color:red">*</span>Contact's city</label>
+            <div class="col-sm-5">
+                <input type="text" name="city" value="" class="form-control" id="city-name">
+            </div>
+        </div>
+        <!-- STATE, ZIP -->
+        <div class="form-group row">
+            <label for="zip-code" class="col-sm-3 control-label"><span style="color:red">*</span>State, <span style="color:red">*</span>Zip</label>
+            <div class="form-group">
+                <div class = "col-sm-3">
+                    <input type="text" name="zip" size="5" value="" class="form-control" id="zip-code" pattern="\d{5}">
+                </div>
+                <div class = "col-sm-3">
+                    <select name="state" class = "form-control">
+                        <option value="">Choose your state</option>
+                        <option value="AK">AK</option>
+                        <option value="AL">AL</option>
+                        <option value="AR">AR</option>
+                        <option value="AZ">AZ</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DC">DC</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="IA">IA</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="MA">MA</option>
+                        <option value="MD">MD</option>
+                        <option value="ME">ME</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MO">MO</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="NE">NE</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NV">NV</option>
+                        <option value="NY">NY</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VA">VA</option>
+                        <option value="VT">VT</option>
+                        <option value="WA">WA</option>
+                        <option value="WI">WI</option>
+                        <option value="WV">WV</option>
+                        <option value="WY">WY</option>					
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="ref-name" class="col-sm-5 control-label">If you permit us to use your name when we send the information to this contact, please type your name as you would like it to appear:</label>
+            <div class="col-sm-3">
+                <input type="text" name="refer_name" placeholder="Your name" value="" class = "form-control">
+            </div>
+        </div>
+        <!-- REFER AGAIN -->
+        <div class="form-group row">
+            <label for="another-ref" class="col-sm-3 control-label"><span style="color:red">*</span>Would you like to make another referral?</label>
+            <div class="col-sm-5">
+                <input type="radio" name="refer_again" class="control-label" value="yes" checked> Yes
+                <input type="radio" name="refer_again" class="control-label" value="no"> No </p>
+            </div>
+        </div>
+        <!-- SUBMIT BUTTON -->
+        <button class="btn btn-primary sbutton submit-buttom" type="submit" name="submit"> Refer Contact </button>
+    </form>
+</div>

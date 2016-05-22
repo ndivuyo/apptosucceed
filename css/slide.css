@@ -1,0 +1,198 @@
+/*CONTRIBUTORS: Mingjie Jin 2016*/
+.content-slideshow-nav {
+    width: 100%;
+}
+.content-image-left {
+	display: inline-block;
+	width: 50%;
+	float: left;
+    background-color: white;
+	/*height: 1px;*/
+	/*overflow:auto;*/
+}
+.content-text-right {
+	display: inline-block;
+	width: 50%;
+}
+.nav-pages > a {
+    text-align: right;
+	float: right;
+	width: 100%;
+    color: #239367;
+    margin: 20px;
+}
+.content-slideshow-child {
+	border: 1px solid #239367;
+	background: #EDF5F2;
+	overflow:auto;
+    margin-bottom: 10px;
+}
+.content-text-right > ol > li {
+	color: black;
+	font-size: 19px;
+	line-height: 22px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.content-text-right > ol > li > ul {
+	padding-left: 1em;
+    text-indent: -.75em;
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    padding-left: 2em;
+    max-width: 37em;
+}
+.slide-button {
+	border-color: #239367;
+	color: #239367;
+}
+@media (max-width: 768px) {
+	.content-image-left {
+		display: block;
+		width: 100%
+	}
+	.content-text-right {
+		display: block;
+		width: 100%
+	}
+}
+.content-image-left > img {
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+}
+.title-graphic {
+    text-align: center;
+    width: 100%;
+    color: #539c81;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font: 16px;
+    line-height: 22px;
+}
+.small-text {
+    text-align: center;
+    width: 100%;
+    color: #539c81;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font: 13px;
+    line-height: 22px;
+}
+.bottom-g {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.chart-key {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    list-style-type: none;
+}
+.aa-chart::before {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: #239867;
+}
+.ai-chart::before {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: #ce6613;
+}
+.hp-chart::before {
+   width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: #2290a0;
+}
+.w-chart::before {
+   width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: #e1d332;
+}
+
+.as-chart::before {
+   width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: #828282;
+}
+.chart-key > li::before {
+    /*font-size: 22px;*/
+    vertical-align: top;
+    text-align: center;
+    -moz-transition: color .1s ease-in 0;
+    -webkit-transition: color .1s ease-in 0;
+    font-family: "Genericons";
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    speak: none;
+    content: '\f428';
+    color: rgba(0,0,0,0);
+}
+
+.content-text-right > ol > li > ul {
+    list-style-type: none;
+}
+
+.content-text-right > ol > li > ul > ul {
+    list-style-type: none;
+} 
+.content-text-right > ol > li > ul > li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #239867; /* Or a color you prefer */
+}
+.content-text-right > ol > li > ul > ul > li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #E9C1A3; /* Or a color you prefer */
+}
+.content-text-right > ul {
+    list-style-type: none;
+}
+.content-text-right > ul > li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #239867; /* Or a color you prefer */
+}
+
+.content-text-right > ul > li > ul{
+    list-style-type: none;
+}
+.content-text-right > ul > li > ul > li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #E9C1A3; /* Or a color you prefer */
+}
+
+@media(min-width:768px) {
+    .nav-pages {
+        margin-top: 50px; 
+    }
+}
+
+.info-wrapper {
+    border-bottom: 1px solid #bc4e25;
+    border-top: 1px solid #bc4e25;
+    padding: 25px;
+    font-size: 17px;
+}

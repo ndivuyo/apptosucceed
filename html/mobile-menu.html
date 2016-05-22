@@ -1,0 +1,32 @@
+
+<!-- CONTRIBUTORS: Dillon Bastan 2016
+DESCRIPTION: This is the HTML for the side navigation mobile menu for smaller window sizes.
+ -->
+ 
+
+<div id="side-menu" ng-controller="mobileMenuController" class="navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="menu-mobile container">
+		<div id="slidemenu">
+    		<ul class="nav navbar-nav">
+				<!-- List item for each page with subpages -->
+				<li ng-repeat="page in pages" class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown"><span class = "sideTitle">{{ page.title }}</span></a>
+					<ul class="sub-menu-mobile dropdown-menu">
+						<!-- List item for each subpage -->
+						<li ng-repeat="subpage in page.subpages">
+							<a ng-href="{{ subpage.url }}"><span class="sideLink">{{ subpage.title }}</span></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+</div>
+<!-- #side-menu-->
+
+
+<!-- Angular App for mobile side menu -->
+<script type="text/javascript">
+	angular.bootstrap($("#side-menu"), ['mobileMenuApp']);
+</script>

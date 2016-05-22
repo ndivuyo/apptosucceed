@@ -1,0 +1,72 @@
+/*
+CONTRIBUTORS: Mingjie Jin 2016
+
+DESCRIPTION: Css styling for the site footer;
+*/
+
+footer {
+    padding: 5px 0 5px 0;
+    font-size: 13px;
+    background-color: rgb(248,248,248);
+    text-align: center;
+}
+.footerLink {
+    color: gray;
+    margin-left: 15px;
+}
+.footerLink:hover {
+    color: black;
+    text-decoration: none;
+}
+.footer-bar {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: gray;
+}
+div.copyright span {
+    display: table;
+    margin: 0 auto;
+}
+.div-line-footer {
+    display:inline-block;
+}
+.footer-append-right {
+    float: right;
+}
+.footer-center {
+    display: table;
+    margin: 0 auto;
+}
+@media (min-width: 990px) {
+    .copyright {
+        width: 40%;
+    }
+    .footerLink {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 860px) {
+    .footer-nav {
+        width: 100%;
+    }
+    .copyright {
+        width: 100%;
+    }
+    .footer-append-right {
+
+    }
+}
+
+@media (max-width: 450px) {
+    .footer-box {
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+}

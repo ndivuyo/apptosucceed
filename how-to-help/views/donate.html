@@ -1,0 +1,286 @@
+<!-- Jewel Lee 2016 -->
+
+<head>
+	<title>Donate | App To Succeed</title>
+
+	<!-- Set Header Page Title -->
+	<script type="text/javascript"> setHeaderPageTitle('Donate'); </script>
+</head>
+
+<!-- Article content -->
+<div class="main-entry">
+    <p>Launching Map the Money Maze in 2016 is dependent on donor funding. Please donate and/or sponsor what you can and you will be acknowledged on our website as a member of the Founders Circle. Your gift will help enable American teens to become and remain financially responsible, self-sufficient and successful.</p>
+    <form action="" method="post" id="donateForm">
+    <!--TODO: fix view for the below sections. -->    
+        <!-- //// CONTACT SECTION //// -->
+        <form class = "" id="donate-info-form">
+            <div id="contact-section">
+                <h5>Donor Information</h5>
+                <hr class="hr-line">
+                    <!-- ORG -->
+                    <div class="form-group row">
+                        <label for="input-org-name" class="col-sm-3 control-label">Organization name</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="input-org-name" name = "org">
+                        </div>
+                    </div>
+                    <!-- ORG CONTACT -->
+                    <div class="form-group row">
+                        <label for="input-your-position" class="col-sm-3 control-label">Your Position</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="input-your-position" name="org_contact" placeholder="Position/Role in Organization">
+                        </div>
+                    </div>
+                    <!-- NAME -->
+                    <div class="form-group row">
+                        <label for="input-your-title" class="col-sm-3 control-label">Your Name</label>
+                        <div class = "form-group">
+                            <div class="col-sm-2">
+                                <select name="title" class="form-control" id = "input-your-title">
+                                    <option>Title</option>
+                                    <option>Mr.</option>
+                                    <option>Mrs.</option>
+                                    <option>Ms.</option>
+                                    <option>Miss</option>
+                                    <option>Dr.</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="input-your-first-name" name="firstname" placeholder="First name">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="input-your-last-name" name="lastname" placeholder="Last name">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DONOR NAME -->
+                    <div class="form-group row">
+                        <label for="input-your-donate-name" class="col-sm-3 control-label">Donor Name</label>
+                        <div class = "col-sm-3">
+                            <select class = "form-control" name="donor_name" id = "input-your-donate-name">
+                                <option>Choose one</option>
+                                <option value="orgname">Organization name</option>
+                                <option value="donorname">First name + Last name</option>
+                                <option value="othername">Other name (specify)</option>
+                                <option value="anonymous">Anonymous</option>     
+                            </select> 
+                        </div>
+                        <div class = "col-sm-3">
+                           <!--TODO: javaScript -->
+                            <!--<input type="text" name="use_othername" placeholder="Please specify" value="">--> 
+                        </div>
+                    </div>              
+            </div>
+            <!-- /// DONATE SECTION /// -->
+            <div id="donate-section">
+                <h5>Donate</h5>
+                <hr class="hr-line">
+                <!-- DONATION UNRESTRICTED -->
+                    <dl>
+                        <!-- DONATION RESTRICTED -->
+                        <dd>
+                            <div class = "form-group row">
+                                <label for="unrestriced-donate" class="col-sm-3 control-label">
+                                    <span class="tooltip-txt" rel="tooltip" title="Donations that will be used for any of the organization's immediate needs">
+                                        Donation Unrestricted
+                                    </span>
+                                </label>
+                                <div class="col-sm-3">
+                                    <input type="number" class="form-control" id="unrestriced-donate" name = "totalunrestricted"  placeholder="0">
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class = "form-group row">
+                                <label for="restriced-donate" class="col-sm-3 control-label">
+                                    <span class="tooltip-txt" rel="tooltip" title="Donations that will be used strictly for software development and operating costs">
+                                       Donation Restricted
+                                    </span>
+                                </label>
+                                <div class="col-sm-3">
+                                    <input type="number" class="form-control" id="restriced-donate" name = "Donation Restricted" placeholder="0" name = "totalrestricted">
+                                </div>
+                            </div>
+                        </dd>                   
+                        <dd>
+                            <div class = "form-group row">
+                                <label for="software-donate" class="col-sm-3 control-label">Software Development</label>
+                                <div class="col-sm-3">
+                                    <input type="number" class="form-control" id="input-software-donate" name = "softdev"  placeholder="0">
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class = "form-group row">
+                                <label for="operation-cost" class="col-sm-3 control-label">Operating Costs</label>
+                                <div class="col-sm-3">
+                                    <input type="number" class="form-control" id="input-operation-cost" name = "opcosts"  placeholder="0">
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                    <!--TODO: TOTAL DONATION css job -->    
+                    <div class="form-group row">
+                        <label for="total-donate" class="col-sm-3 control-label">Total Donation</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="total-donate" name = "totaldonation">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary submit-buttom" type="submit"> Next >> </button>
+            </div>
+        </form>
+        <!-- /// SPONSOR SECTION /// -->
+        <!--<div id="sponsor-section">-->
+            <!--<h5>Sponsor</h5>
+            <p>I would like to sponsor 16-19 year olds who do not have the financial means to pay for Map the Money Maze subscriptions.</p>
+            <table>
+                <tr>
+                    <th># Subscriptions</th>
+                    <th>Price/subscription</th> 
+                </tr>
+                <tr>
+                    <td>1-100</td>
+                    <td>$50</td> 
+                </tr>
+                <tr>
+                    <td>101-1,000</td>
+                    <td>$45</td> 
+                </tr>
+                <tr>
+                    <td>1,001+</td>
+                    <td>$40</td> 
+                </tr>
+            </table>-->
+            <!-- NUMBER OF SUBSCRIPTIONS -->
+            <!--Number of Subscriptions <input type="number" placeholder="0" name="numsubscriptions" value=""> <br>-->
+            <!--TODO: TOTAL SPONSORSHIP: css job -->
+            <!--Total Sponsorship   $<input class="totalsright" type="text" name="totalsponsorship" readonly value=""> <br>-->
+            <!--I would like my subscriptions to be allocated as follows: <br>-->
+            <!-- ALLOCATION: 16-19 YEAR OLDS -->
+            <!--<input type="number" placeholder="0" name="teenapplicants" value=""> 16-19 year olds applicants, by application date.<br>-->
+            <!-- ALLOCATION: ORGS -->
+            <!--<input type="number" placeholder="0" name="orgapplicants" value=""> Nonprofit organization and school applicants, by application date. <br>-->
+            <!-- ALLOCATION: STATES -->
+            <!--<input type="number" placeholder="0" name="teenapplicants_states" value=""> 16-19 year olds living in the following states <em>(For multiple states hold down the Ctrl key for PC and Command key for Mac):</em>-->
+            <!--<select multiple name="state_sponsor[]" size="5">
+                <option value="AK">AK</option>
+                <option value="AL">AL</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VA">VA</option>
+                <option value="VT">VT</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>				
+            </select> <br>-->
+   	        <!-- ALLOCATION: COMMUNITIES -->
+            <!--<input type="number" class="s-allocate" placeholder="0" name="teen_communities" value="">16-19 year olds living in these specific communities: (List as many as you like) <br>-->
+            <!-- TODO: PLUS SIGN (1) jquery/js: duplicate <div class="plus"> area. (2) plus sign css or img -->
+            <!--<a class="pp-link" href="#">+</a>		
+            <div class="plus">
+                <input type="text" name="com_city[]" placeholder="City" value=""><span style="color:red">*</span>
+                <select name="state_comm[]" size="1">
+                    <option value="">  </option>
+                    <option value="AK">AK</option>
+                    <option value="AL">AL</option>
+                    <option value="AR">AR</option>
+                    <option value="AZ">AZ</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DC">DC</option>
+                    <option value="DE">DE</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    <option value="HI">HI</option>
+                    <option value="IA">IA</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="MA">MA</option>
+                    <option value="MD">MD</option>
+                    <option value="ME">ME</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MO">MO</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="NE">NE</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NV">NV</option>
+                    <option value="NY">NY</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VA">VA</option>
+                    <option value="VT">VT</option>
+                    <option value="WA">WA</option>
+                    <option value="WI">WI</option>
+                    <option value="WV">WV</option>
+                    <option value="WY">WY</option>										
+                </select>
+                <span style="color:red">*</span><input type="text" name="zip_comm[]" placeholder="Zip" size="5" value=""><span style="color:red">*</span><br>
+            </div>    -->
+            <!--<input type="text" name="sponsorsum" readonly value="0"> Number of subscriptions remaining to allocate<br>-->
+        <!--</div>-->
+        <!-- /// FINAL SECTION /// -->
+        <!--<a href="#"><< Previous</a>-->
+        <!--<input type="submit" name="submit" value="Review >>">-->
+    </form>
+</div>

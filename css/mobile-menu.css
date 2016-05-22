@@ -1,0 +1,148 @@
+
+/*
+CONTRIBUTORS: Mingjie Jin 2016
+DESCRIPTION: css for mobile menu
+*/
+
+ body.slide-active {
+      overflow-x: hidden
+  }
+  body {
+    position: relative;
+      left: 0px;
+  }
+  .no-margin-top {
+      margin-top: 0px!important
+  }
+  #page-content {
+      /*position: relative;*/
+      left: 0;
+  }
+  #page-content.slide-active {
+      padding-top: 0
+  }
+  .navbar.navbar-fixed-top.slide-active {
+      position: relative
+  }
+  @media (max-width:990px) { 
+    #side-menu .container {
+        margin: 0!important;
+        padding: 0!important;
+        height:100%;
+    }
+    #side-menu .navbar-inverse .slide-active {
+        position: absolute;
+        width: 30%;
+        top: 10px;
+        z-index: 1000;
+    }
+    #side-menu #slidemenu {
+        /*background: #f7f7f7;*/
+        left: -100%;
+        width: 250px;
+        min-width: 0;
+        position: absolute;
+        padding-left: 0;
+        z-index: 2;
+        top: 10px;
+        margin: 0;
+    }
+    #side-menu #slidemenu .navbar-nav {
+        min-width: 0;
+        width: 100%;
+        margin: 0;
+    }
+    #side-menu #slidemenu .navbar-nav .dropdown-menu li a {
+        min-width: 0;
+        width: 100%;
+        white-space: normal;
+    }
+    #side-menu.navbar-inverse #slidemenu {
+        background: rgb(248, 248, 248);
+    }
+    #navbar-height-col {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        bottom:0;
+        width: 250px;
+        left: -250px;
+        /*background: #f7f7f7;*/
+    }
+    #navbar-height-col.inverse {
+        background: rgb(248, 248, 248);
+        z-index: 1;
+        border: 0;
+    }
+  }
+  @media (min-width:990px) { 
+    #page-content {
+        left: 0!important
+    }
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed
+    }
+  }
+  .sideTitle {
+    color: rgb(51,51,51);
+  }
+  .dropdown:hover {
+    background-color: rgb(230,230,230);
+  }
+  .sideLink {
+    color: rgb(91,91,91);
+  }
+  .dropdown-menu li:hover {
+    background-color: rgb(200,200,200);
+  }
+  .open {
+    background-color: rgb(230,230,230);
+  }
+  .navbar-inverse {
+    background: rgb(248,248,248)!important;
+  }
+.open .dropdown-toggle {
+  background:rgb(180,180,180)!important;
+  /*color:rgb(230,230,230)!important;*/
+}
+@media (min-width: 990px) {
+  #side-menu {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        /*box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);*/
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .dropdown-menu {
+       position: static;
+       float: none;
+       width: auto;
+       margin-top: 0;
+       background-color: transparent;
+       border: 0;
+       -webkit-box-shadow: none;
+       box-shadow: none;
+    }
+}

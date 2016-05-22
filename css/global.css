@@ -1,0 +1,324 @@
+/*
+CONTRIBUTORS: Mingjie Jin 2016, Dillon Bastan 2016
+DESCRIPTION: This is a CSS file for the all pages of the App To Succeed website
+*/
+
+
+/*General Style Rules*/
+body {
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.col-lg-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.col-md-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.col-sm-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.col-xs-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+body.col-lg-12 {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+body.col-md-12 {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+body.col-sm-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+body.col-xs-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#page {
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: white;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+#side-menu {
+	display: none;
+}
+div.content-slideshow-child {
+	display: none;
+}
+hr {
+	margin: 2px 0 2px 0;
+}
+@media only screen and (min-width: 1080px) {
+	body {
+		padding-top: 30px;
+		padding-left: 50px!important;
+		padding-right: 50px!important;
+		padding-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 1080px) and (min-width: 909px) {
+	body {
+		padding-top: 15px;
+		padding-left: 50px!important;
+		padding-right: 50px!important;
+		padding-bottom: 15px;
+	}
+}
+@media only screen and (max-width: 909px) and (min-width: 768px) {
+	body {
+		padding-top: 15px;
+		padding-left: 25px!important;
+		padding-right: 25px!important;
+		padding-bottom: 15px;
+	}
+}
+@media only screen and (max-width: 768px) and (min-width: 420px) {
+	body {
+		padding-top: 10px;
+		padding-left: 10px!important;
+		padding-right: 10px!important;
+		padding-bottom: 10px;
+	}
+}
+@media(max-width: 420px) {
+	body {
+		padding: 0px;
+	}
+}
+.inner-wrap {
+	width: 90%;
+	margin: 0 auto; 
+}
+#scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(103,170,148, 0.5) !important;
+    border-style: none;
+}
+#scroll-up:hover {
+    background-color: rgb(12,97,92) !important;
+}
+/**/
+
+
+
+/*page-view*/
+#page-view {
+	margin-top: 15px;
+}
+/*page-view-primary*/
+.content-slideshow {
+	margin-top: 15px;
+}
+
+
+
+
+/*Page side menu #secondary*/
+.page-side-hr {
+	border-top: 3px solid rgb(41, 136, 104);
+}
+.secondary-title {
+	font-size: 22px;
+}
+.page-nav-menu > li {
+	line-height: 2em;
+}
+ul.page-nav-menu li li {
+	padding-left: 0;
+	margin-left: -20px;
+}
+.page-nav-menu a {
+	color: #238967;
+	font-size: 15px;
+}
+#secondary ul {
+	list-style: none;
+}
+ul.page-nav-menu {
+	padding-left: 0;
+}
+@media(max-width: 990px) {
+	#secondary {
+		display: none;
+	}
+}
+#secondary {
+	margin-left: -35px;
+}
+/*#secondary*/
+
+
+
+
+/*PAGE RULES*/
+.page-switch-button {
+	width: 75%;
+	margin: 0 auto;
+	float: none;
+}
+
+#main-entry > h5{
+    color: #005760;
+    padding: 0;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    margin-bottom: 3px;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+#main-entry > ul {
+    list-style-type: none;
+}
+
+#main-entry > ul > li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #239867; /* Or a color you prefer */
+}
+
+#main-entry p {
+    margin-bottom: 10px;
+    line-height: 22px;
+    /*max-width: 37em;*/
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.content-column > div > ul {
+    list-style-type: none;
+}
+.content-column > div > ul > ul {
+    list-style-type: none;
+}
+
+.content-column > div > ul > li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #239867; /* Or a color you prefer */
+}
+
+.content-column > div > ul > ul > li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #E9C1A3; /* Or a color you prefer */
+}
+
+.content-column > ul {
+    list-style-type: none;
+}
+
+.content-column > ul > li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #239867; /* Or a color you prefer */
+}
+
+.content-column-left > h5{
+    color: #005760;
+    padding: 0;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    margin-bottom: 3px;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.content-column-left {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.content-column-right {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.content-column-right > img {
+    vertical-align: initial;
+}
+@media(max-width:768px) {
+    .content-column-left, .content-column-right {
+        width: 100%;
+    }
+    #input-your-first-name, #input-your-last-name {
+        margin-top: 5px;
+    }
+}
+
+.main-entry h5, #main-entry h5 {
+    color: #005760;
+    padding: 0;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    margin-bottom: 3px;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.hr-line {
+   border-color: #005760;
+    padding-bottom: 10px; 
+}
+
+.submit-buttom {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.faq-h5 {
+    border-bottom: 1px solid #EAEAEA;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #c76518;
+}
+
+.dropdown-content > ul > li:before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #239867; /* Or a color you prefer */
+}
+
+.dropdown-content > ul {
+    list-style-type: none;
+    font-size:16px;
+    max-width: 800px;
+}
+
+.web-link, .web-link:hover {
+    color: #239867;
+}
+
+.web-link:hover {
+    text-decoration: none;
+}
+
+.dropdown-content p {
+    font-size: 16px;
+}
+
+.h5-link:hover {
+    text-decoration: none;
+    color: #c76518;
+}

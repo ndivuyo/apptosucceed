@@ -1,0 +1,155 @@
+/*
+CONTRIBUTORS: Mingjie Jin 2016
+DESCRIPTION: This is a CSS file for the header for all pages of the App To Succeed website
+*/
+
+
+.header-right-section {
+	margin-top: 20px;
+}
+.topButton {
+	margin-left: 6px;
+}
+nav.main-navigation div {
+	margin-left: 20px;
+}
+.div-line {
+	display:inline-block;
+	margin-left: 20px;
+}
+.btn-primary {
+	border-radius: 4px;
+	border-style: none;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	font-size: 15px;
+	font-weight: 400;
+	background-color: rgb(12,97,92) !important;
+}
+.btn-primary:hover {
+	background-color: rgb(103,170,148) !important;
+}
+div.header-page-title {
+	height: 60px;
+	background-color: rgb(103,170,148);
+	margin-top: 20px;
+}
+span.header-page-title {
+	font-size: 22px;
+	color: white;
+	line-height: 60px;
+}
+.centerHeadInner {
+	display: table-cell;
+}
+.centerHeadDiv {
+	height: 70px;
+	width: 70%;
+	display: table; 
+	overflow: hidden;
+}
+.downButton {
+	background-color: white;
+}
+.downButton ul {
+	border-style: none;
+	box-shadow: none;
+	margin-top: 0;
+	font-size: 13px;
+	/*width: 100px;*/
+}
+.dropDownTitle {
+	color: rgb(188, 78, 37);
+	font-size: 16px;
+	text-align: center;
+}
+.dropDownTitle:hover {
+	color: #000;
+}
+a.header-logo-image img {
+	width: 400px;
+	height: 92px;
+}
+@media (min-width: 990px) {
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+	.dropDownDiv {
+		margin-left: 70px;
+	}
+	span.header-page-title {
+		margin-left: 15%;
+	}
+}
+@media (max-width: 990px) {
+	.centerDiv {
+		width: 330px;
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.header-logo-image {
+		max-width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+	.centerHeadDiv {
+		width: 100%;
+	}
+	.appendRight {
+		width:430px;
+		float: none;
+		margin: 0 auto;
+	}
+	span.header-page-title {
+		margin-left: 15px;
+	}
+}
+@media (max-width: 990px) {
+	.header-right-section {
+		display: none;
+	}
+    .header-logo-image-div {
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 450px) {
+    .header-logo-image-div {
+        width:400px;
+    }
+}
+@media (min-width: 990px) {
+	div.header-right-simple-menu {
+		display: none;
+	}
+}
+@media (min-width: 991px) {
+	.centerHeadDiv {
+		margin-left: 15%;
+	}
+	.appendRight {
+		float: right;
+	}
+}
+span.dropdown-toggle a {
+	font-weight: 400;
+}
+div.center div {
+	width: 100%;
+}
+button.sideMenu span {
+	margin-right: 4px;
+}
+div.header-right-simple-menu {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+div.header-right-simple-menu div {
+	width: 53%;
+	margin: 0 auto;
+}
+button.sideMenu {
+	width: 100%;
+}
